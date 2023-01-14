@@ -6,9 +6,7 @@
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   <script
     src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
-  <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
-  <script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+ 
 
   <script src="./shoot.js"></script>
   <script src="./playerMovement.js"></script>
@@ -17,7 +15,7 @@
 
 <body>
   
-  <a-scene id="scene" inspector-plugin-recast>
+  <a-scene id="scene" >
 
     <!--Assets-->
     <a-assets>
@@ -56,11 +54,10 @@
 
 
     <!--Bullets-->
-    <a-entity bullets="position:0 0 -5"></a-entity>
+   
 
     <!-- Navigation Mesh -->
-    <a-entity id="navigation-mesh" position="0 -1 0" gltf-model="#collider" visible="false" nav-mesh>
-    </a-entity>
+   
 
     <!--Ground-->
     <a-plane id="ground" position="0 0 -15" rotation="-90 0 0" height="50" width="50" static-body
